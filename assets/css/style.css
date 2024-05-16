@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
+:root {
+  --bg-card: #ea0012;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Radio Canada Big", sans-serif;
+}
+.nav_bar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 0 20px;
+}
+.nav_bar_img img {
+  height: 80px;
+}
+.nav_bar_input {
+  width: calc(100% - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  margin: 0;
+  -moz-appearance: textfield;
+  border-radius: 20px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+}
+#form_find {
+  display: flex;
+  gap: 20px;
+}
+#btn_find {
+  width: 80px;
+  background-color: var(--bg-card);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.container_cards {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 230px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  background: linear-gradient(
+    45deg,
+    transparent 8%,
+    var(--bg-card) 8%,
+    var(--bg-card) 92%,
+    transparent 8%
+  );
+  /* background-color: black; */
+  border-radius: 35px 10px 35px 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.card img {
+  width: 150px;
+}
+.title_name {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 700;
+  width: 85%;
+}
+
+.card_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 700;
+}
+.card_stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.7em;
+  font-weight: 700;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
