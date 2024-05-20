@@ -54,8 +54,8 @@ input[type="number"] {
   align-items: center;
 }
 .card {
-  width: 230px;
-  height: 480px;
+  width: 300px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,12 +63,12 @@ input[type="number"] {
   gap: 12px;
   background: linear-gradient(
     45deg,
-    transparent 8%,
-    var(--bg-card) 8%,
-    var(--bg-card) 92%,
-    transparent 8%
+    transparent 10%,
+    var(--bg-card) 10%,
+    var(--bg-card) 90%,
+    transparent 10%
   );
-  /* background-color: black; */
+
   border-radius: 35px 10px 35px 10px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -108,15 +108,58 @@ input[type="number"] {
   flex-direction: column;
   text-align: center;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* COLORS POKES */
+.electric {
+  background-color: #e0e12a;
+}
+.normal {
+  background-color: #a8a878;
+}
+.fire {
+  background-color: #f08030;
+}
+.water {
+  background-color: #6890f0;
+}
+.grass {
+  background-color: #78c850;
+}
+.ice {
+  background-color: #98d8d8;
+}
+.fighting {
+  background-color: #c03028;
+}
+.poison {
+  background-color: #be3ebe;
+}
+.ground {
+  background-color: #816926;
+}
+.flying {
+  background-color: #a890f0;
+}
+.psychic {
+  background-color: #f85888;
+}
+.bug {
+  background-color: #a8b820;
+}
+.rock {
+  background-color: #6e6746;
+}
+.ghost {
+  background-color: #939197;
+}
+.dragon {
+  background-color: #f75e38;
+}
+.dark {
+  background-color: #040608;
+}
+.steel {
+  background-color: #b8b8d0;
+}
+.fairy {
+  background-color: #f0b6bc;
 }
